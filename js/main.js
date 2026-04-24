@@ -29,7 +29,7 @@ const iniciarLinks = () => {
 
             const pagina = link.dataset.link;
 
-            const menu = document.querySelector('[data-menu]');
+            const menu = document.querySelector('[data-componente="menu"]');
             const botao = menu.querySelector('.menu__botao');
 
             if (menu.classList.contains('active')) {
