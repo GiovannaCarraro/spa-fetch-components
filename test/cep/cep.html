@@ -16,11 +16,13 @@
 
         <br><br>
 
-        <button id="btnThen">then().</button>
-        <button id="btnAsync">async/await</button>
+        <button type="button" id="btnThen">then().</button>
+        <button type="button" id="btnAsync">async/await</button>
     </form>
+
 </body>
-<script >
+
+<script>
 
 const btnThen = document.getElementById('btnThen')
 const btnAsync = document.getElementById('btnAsync')
@@ -28,7 +30,9 @@ const inputCep = document.getElementById('cep')
 
 
 // botao then
-btnThen.addEventListener('click',  () => {
+btnThen.addEventListener('click', (event) => {
+
+    event.preventDefault()
 
     const cep = inputCep.value
 
@@ -63,7 +67,9 @@ btnThen.addEventListener('click',  () => {
 
 
 // botao async
-btnAsync.addEventListener('click', async () => {
+btnAsync.addEventListener('click', async (event) => {
+
+    event.preventDefault()
 
     try {
 
@@ -91,5 +97,6 @@ btnAsync.addEventListener('click', async () => {
     }
 
 })
+
 </script>
 </html>
