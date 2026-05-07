@@ -4,7 +4,7 @@ const inputCep = document.getElementById('cep')
 
 
 // botao then
-btnThen.addEventListener('click', () => {
+btnThen.addEventListener('click',  () => {
 
     const cep = inputCep.value
 
@@ -38,7 +38,7 @@ btnThen.addEventListener('click', () => {
 
 
 
-// botao asyc
+// botao async
 btnAsync.addEventListener('click', async () => {
 
     try {
